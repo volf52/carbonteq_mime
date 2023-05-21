@@ -22,28 +22,28 @@ impl Mime {
     self.0.essence_str().to_string()
   }
 
-  #[napi]
-  pub fn TEXT_PLAIN() -> Mime {
+  #[napi(js_name = "TEXT_PLAIN")]
+  pub fn text_plain() -> Mime {
     Self(mime::TEXT_PLAIN)
   }
 
-  #[napi]
-  pub fn TEXT_HTML() -> Mime {
+  #[napi(js_name = "TEXT_HTML")]
+  pub fn text_html() -> Mime {
     Self(mime::TEXT_HTML)
   }
 
-  #[napi]
-  pub fn JSON() -> Mime {
+  #[napi(js_name = "JSON")]
+  pub fn json() -> Mime {
     Self(mime::APPLICATION_JSON)
   }
 
-  #[napi]
-  pub fn JPG() -> Mime {
+  #[napi(js_name = "JPG")]
+  pub fn jpg() -> Mime {
     Self(mime::IMAGE_JPEG)
   }
 
-  #[napi]
-  pub fn PNG() -> Mime {
+  #[napi(js_name = "PNG")]
+  pub fn png() -> Mime {
     Self(mime::IMAGE_PNG)
   }
 
