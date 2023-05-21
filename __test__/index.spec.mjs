@@ -2,7 +2,7 @@ import test from "ava";
 
 import { Mime } from "../index.js";
 
-test("can parse", (t) => {
+test("can parse string", (t) => {
 	t.deepEqual(Mime.parseStr("text/html;charset=utf-8"), Mime.TEXT_HTML());
 	t.deepEqual(Mime.parseStr("application/json"), Mime.JSON());
 	t.deepEqual(Mime.parseStr("image/png"), Mime.PNG());
